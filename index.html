@@ -1,0 +1,3791 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>relit image user study</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="FileSaver.js"></script>
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 1920px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: -10px;
+  margin-top: -22px;
+  color: blue;
+  font-weight: bold;
+  font-size: 138px;
+  transition: 0.1s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+}
+.text {
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 5%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px},
+   .column {
+        width: 100%;
+    }
+}
+.column {
+    float: left;
+    width: 32%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#div_in {
+    float: left;
+    width: 320px;
+    height: 192px;
+    margin: 1px;
+    padding: 1px;
+    border: 1px dotted black;
+}
+.div {
+    float: left;
+    width: 320px;
+    height: 192px;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<div class="slideshow-container">
+<p>choose the best image.
+<p>!!!Note: open it in Chrome.(avoid IE/Edge. Maybe fireFox/360 is ok)
+<p>(focus on light and color).</p>
+<p>(total 150, try to finish all, about 10 min. after finishing all, please click submit, download the txt file, modify file name to your name, and send it to me by wechat.)</p>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn1" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/05d282bb-1c14-47fd-a7da-f5aa0f36ff99_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image1">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/05d282bb-1c14-47fd-a7da-f5aa0f36ff99_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image2">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="1" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="1" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="1" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn3" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/0702ec2d-69b8-453d-aaa9-a9af89a3e95a.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image3">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn4" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/0702ec2d-69b8-453d-aaa9-a9af89a3e95a.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image4">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="2" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="2" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="2" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn5" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/07e6c6fc-9db1-492a-99fc-a81d0c7d3b8e_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image5">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn6" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/07e6c6fc-9db1-492a-99fc-a81d0c7d3b8e_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image6">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="3" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="3" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="3" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn7" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/0a5a4603-3cca-4278-bf09-740e75355bc0.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image7">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn8" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/0a5a4603-3cca-4278-bf09-740e75355bc0.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image8">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="4" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="4" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="4" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn9" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/0fb4f294-d430-4268-9b3d-2b651e019784.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image9">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn10" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/0fb4f294-d430-4268-9b3d-2b651e019784.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image10">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="5" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="5" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="5" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn11" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/1172f1ca-7c66-4b92-9a86-c96513e784e5_0090.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image11">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn12" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/1172f1ca-7c66-4b92-9a86-c96513e784e5_0090.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image12">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="6" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="6" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="6" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn13" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/1535ce5f-bfe5-4595-a422-6d08309557a4_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image13">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn14" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/1535ce5f-bfe5-4595-a422-6d08309557a4_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image14">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="7" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="7" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="7" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn15" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/15b8fa2d-a933-4822-8fdf-249170a8466f.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image15">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn16" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/15b8fa2d-a933-4822-8fdf-249170a8466f.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image16">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="8" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="8" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="8" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn17" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/18807fb9-498d-44c5-8eba-02c0562f8a98.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image17">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn18" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/18807fb9-498d-44c5-8eba-02c0562f8a98.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image18">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="9" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="9" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="9" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn19" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/19eac7b8-8378-453c-b609-49d46a6aeb22.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image19">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn20" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/19eac7b8-8378-453c-b609-49d46a6aeb22.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image20">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="10" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="10" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="10" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn21" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/1c637bc8-cfc9-47a7-b608-4b7333bebff9.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image21">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn22" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/1c637bc8-cfc9-47a7-b608-4b7333bebff9.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image22">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="11" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="11" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="11" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn23" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/1c818485-7ae4-4376-9094-c2f9ebe5e28f_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image23">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn24" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/1c818485-7ae4-4376-9094-c2f9ebe5e28f_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image24">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="12" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="12" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="12" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn25" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/1d33ab96-43b7-436f-a710-293efcb379eb_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image25">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn26" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/1d33ab96-43b7-436f-a710-293efcb379eb_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image26">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="13" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="13" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="13" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn27" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/1d549a60-6139-45df-9f40-7daf1fe2d60b_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image27">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn28" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/1d549a60-6139-45df-9f40-7daf1fe2d60b_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image28">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="14" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="14" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="14" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn29" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/1dd400e1-011a-4ff2-91b9-302fe420b957_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image29">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn30" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/1dd400e1-011a-4ff2-91b9-302fe420b957_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image30">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="15" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="15" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="15" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn31" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/1e920912-2c31-4357-8869-5378da3264a4_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image31">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn32" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/1e920912-2c31-4357-8869-5378da3264a4_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image32">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="16" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="16" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="16" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn33" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/22ad0266-4034-451a-9010-059d9bc7d322.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image33">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn34" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/22ad0266-4034-451a-9010-059d9bc7d322.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image34">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="17" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="17" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="17" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn35" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/22b74c11-a6ee-4fb4-840f-b1a5ed90b225.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image35">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn36" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/22b74c11-a6ee-4fb4-840f-b1a5ed90b225.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image36">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="18" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="18" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="18" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn37" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/2787888b-b751-47a5-8c98-f2a02cf17280_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image37">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn38" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/2787888b-b751-47a5-8c98-f2a02cf17280_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image38">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="19" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="19" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="19" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn39" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/28f906ab-4e7c-4077-aa1b-f0fdf3f501ee.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image39">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn40" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/28f906ab-4e7c-4077-aa1b-f0fdf3f501ee.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image40">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="20" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="20" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="20" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn41" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/293070b6-8755-4ff7-8947-24ff97adf84f_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image41">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn42" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/293070b6-8755-4ff7-8947-24ff97adf84f_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image42">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="21" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="21" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="21" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn43" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/2b317ee5-4b72-4b43-9b77-ac6bfd6c5739_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image43">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn44" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/2b317ee5-4b72-4b43-9b77-ac6bfd6c5739_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image44">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="22" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="22" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="22" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn45" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/2b7e6790-c844-41ff-b5ef-b3a8887dcf03_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image45">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn46" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/2b7e6790-c844-41ff-b5ef-b3a8887dcf03_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image46">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="23" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="23" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="23" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn47" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/2dde762c-2800-41bd-a34f-375532c81fbe_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image47">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn48" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/2dde762c-2800-41bd-a34f-375532c81fbe_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image48">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="24" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="24" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="24" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn49" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/2e99f938-6b0f-403f-be20-1fa22429fee7.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image49">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn50" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/2e99f938-6b0f-403f-be20-1fa22429fee7.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image50">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="25" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="25" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="25" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn51" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/2eb94e41-6094-44d5-8505-2862c361ae26.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image51">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn52" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/2eb94e41-6094-44d5-8505-2862c361ae26.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image52">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="26" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="26" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="26" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn53" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/2ef1daa3-c0a0-4418-961d-f1816d68a805.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image53">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn54" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/2ef1daa3-c0a0-4418-961d-f1816d68a805.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image54">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="27" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="27" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="27" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn55" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/2f110dd7-bcac-4eb8-8da4-29fae655c988.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image55">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn56" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/2f110dd7-bcac-4eb8-8da4-29fae655c988.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image56">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="28" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="28" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="28" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn57" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/2f3ddd7c-a6b8-472c-b0c3-1180a6f73a09_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image57">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn58" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/2f3ddd7c-a6b8-472c-b0c3-1180a6f73a09_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image58">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="29" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="29" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="29" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn59" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/3034700a-c333-4565-8d80-3de012b6baa1.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image59">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn60" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/3034700a-c333-4565-8d80-3de012b6baa1.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image60">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="30" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="30" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="30" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn61" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/30c68a88-0ca5-492d-86e5-f18ed025b94c.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image61">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn62" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/30c68a88-0ca5-492d-86e5-f18ed025b94c.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image62">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="31" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="31" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="31" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn63" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/3336da58-09ba-4a40-a63a-cfab90d6d5e2_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image63">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn64" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/3336da58-09ba-4a40-a63a-cfab90d6d5e2_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image64">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="32" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="32" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="32" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn65" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/3433579f-1ba4-41b5-9a51-89e56cd8e4ef.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image65">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn66" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/3433579f-1ba4-41b5-9a51-89e56cd8e4ef.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image66">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="33" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="33" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="33" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn67" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/366ff83e-3640-473d-91ad-83495ff71ea8.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image67">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn68" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/366ff83e-3640-473d-91ad-83495ff71ea8.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image68">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="34" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="34" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="34" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn69" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/3812540f-038c-4649-a560-5b16e8129a09.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image69">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn70" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/3812540f-038c-4649-a560-5b16e8129a09.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image70">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="35" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="35" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="35" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn71" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/3ad9f3b3-b6c4-4983-abce-855b286564a7_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image71">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn72" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/3ad9f3b3-b6c4-4983-abce-855b286564a7_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image72">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="36" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="36" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="36" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn73" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/3bc70a14-1959-46f6-ad7a-1a950b344b0b.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image73">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn74" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/3bc70a14-1959-46f6-ad7a-1a950b344b0b.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image74">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="37" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="37" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="37" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn75" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/3c339289-923f-41e4-9aba-03a1644b159d_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image75">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn76" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/3c339289-923f-41e4-9aba-03a1644b159d_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image76">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="38" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="38" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="38" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn77" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/3ddf4f2b-a88b-46c5-a510-1b86c12b1c76.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image77">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn78" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/3ddf4f2b-a88b-46c5-a510-1b86c12b1c76.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image78">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="39" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="39" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="39" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn79" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/3e2cbf6b-9931-47cd-bb72-9a0740879388.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image79">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn80" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/3e2cbf6b-9931-47cd-bb72-9a0740879388.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image80">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="40" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="40" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="40" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn81" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/3fb3373f-ff03-4503-8c2a-d021db77171a_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image81">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn82" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/3fb3373f-ff03-4503-8c2a-d021db77171a_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image82">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="41" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="41" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="41" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn83" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/41663f1e-0fbe-4530-bf09-3d24c41574f3.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image83">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn84" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/41663f1e-0fbe-4530-bf09-3d24c41574f3.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image84">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="42" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="42" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="42" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn85" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/438ce17c-f1b6-462b-8b66-f391491be71d.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image85">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn86" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/438ce17c-f1b6-462b-8b66-f391491be71d.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image86">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="43" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="43" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="43" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn87" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/49a37792-177f-4ab0-ad30-cb114031b3a8.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image87">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn88" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/49a37792-177f-4ab0-ad30-cb114031b3a8.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image88">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="44" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="44" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="44" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn89" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/4a3020e6-0c3f-4636-a201-a9ed5eada7f3.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image89">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn90" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/4a3020e6-0c3f-4636-a201-a9ed5eada7f3.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image90">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="45" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="45" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="45" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn91" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/4a99638f-2e39-48bc-9c1f-17cb6e580669_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image91">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn92" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/4a99638f-2e39-48bc-9c1f-17cb6e580669_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image92">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="46" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="46" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="46" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn93" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/4ac81e7f-6596-4b2d-9e41-85968c2549c9_0060.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image93">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn94" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/4ac81e7f-6596-4b2d-9e41-85968c2549c9_0060.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image94">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="47" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="47" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="47" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn95" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/4adbba81-d384-4539-b2e9-3dd0d134164e_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image95">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn96" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/4adbba81-d384-4539-b2e9-3dd0d134164e_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image96">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="48" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="48" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="48" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn97" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/4aeb0a29-791e-482f-aadc-bfeb15d0b6fd_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image97">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn98" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/4aeb0a29-791e-482f-aadc-bfeb15d0b6fd_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image98">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="49" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="49" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="49" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn99" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/4c5a98ce-4ff6-4055-a53d-eb4b8264b5be_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image99">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn100" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/4c5a98ce-4ff6-4055-a53d-eb4b8264b5be_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image100">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="50" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="50" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="50" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn101" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/4e051151-8e4e-4439-a037-117d923d7bf9_0060.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image101">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn102" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/4e051151-8e4e-4439-a037-117d923d7bf9_0060.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image102">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="51" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="51" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="51" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn103" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/4e0864d9-a7c8-4d48-8725-77f74db38ed8.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image103">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn104" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/4e0864d9-a7c8-4d48-8725-77f74db38ed8.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image104">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="52" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="52" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="52" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn105" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/5374e6f8-1628-48e8-a396-f852c5f145bf_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image105">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn106" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/5374e6f8-1628-48e8-a396-f852c5f145bf_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image106">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="53" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="53" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="53" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn107" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/5b5372a4-bd3e-4b74-9e4c-056dbab31966.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image107">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn108" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/5b5372a4-bd3e-4b74-9e4c-056dbab31966.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image108">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="54" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="54" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="54" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn109" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/5b89d4f4-f95a-4510-b3c2-5421315696d5.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image109">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn110" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/5b89d4f4-f95a-4510-b3c2-5421315696d5.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image110">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="55" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="55" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="55" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn111" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/5c15ee48-8f79-46d1-88da-181671090591_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image111">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn112" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/5c15ee48-8f79-46d1-88da-181671090591_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image112">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="56" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="56" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="56" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn113" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/5cc6e9d4-dad6-4b7d-8b38-b952dc6c89ab_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image113">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn114" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/5cc6e9d4-dad6-4b7d-8b38-b952dc6c89ab_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image114">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="57" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="57" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="57" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn115" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/5d60a13d-5bbe-4889-9ecb-2ede1f8e4411.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image115">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn116" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/5d60a13d-5bbe-4889-9ecb-2ede1f8e4411.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image116">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="58" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="58" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="58" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn117" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/5d9fe37b-5982-49f6-814a-ba6dc8ea58d8.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image117">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn118" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/5d9fe37b-5982-49f6-814a-ba6dc8ea58d8.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image118">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="59" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="59" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="59" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn119" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/5e5ffb16-cf8d-4f87-8ac9-c9d1510f5ea3_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image119">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn120" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/5e5ffb16-cf8d-4f87-8ac9-c9d1510f5ea3_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image120">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="60" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="60" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="60" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn121" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/5ec4e64b-9fa9-4195-9ab1-97352ac99bc2.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image121">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn122" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/5ec4e64b-9fa9-4195-9ab1-97352ac99bc2.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image122">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="61" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="61" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="61" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn123" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/5efaa1fa-df4b-476b-85cd-77203d13d4e4.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image123">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn124" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/5efaa1fa-df4b-476b-85cd-77203d13d4e4.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image124">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="62" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="62" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="62" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn125" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/5fa38e91-8ae6-4c9b-b65a-5a7050db4829_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image125">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn126" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/5fa38e91-8ae6-4c9b-b65a-5a7050db4829_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image126">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="63" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="63" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="63" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn127" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/60dd2370-c580-48c6-80b0-05f14085eb50.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image127">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn128" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/60dd2370-c580-48c6-80b0-05f14085eb50.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image128">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="64" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="64" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="64" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn129" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/6110bfce-b653-46b4-bb75-316446374af1_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image129">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn130" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/6110bfce-b653-46b4-bb75-316446374af1_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image130">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="65" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="65" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="65" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn131" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/618298d1-db9b-4c4a-8f7f-3b6488e0fb95_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image131">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn132" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/618298d1-db9b-4c4a-8f7f-3b6488e0fb95_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image132">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="66" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="66" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="66" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn133" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/64338f86-4a05-415a-af26-d3c3f7eb3a0b_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image133">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn134" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/64338f86-4a05-415a-af26-d3c3f7eb3a0b_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image134">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="67" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="67" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="67" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn135" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/657958b7-3d7e-4f62-a9eb-78946a4d6eb5.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image135">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn136" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/657958b7-3d7e-4f62-a9eb-78946a4d6eb5.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image136">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="68" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="68" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="68" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn137" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/6817a7ce-d5d6-4ce2-86c5-452c5f57d2bd_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image137">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn138" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/6817a7ce-d5d6-4ce2-86c5-452c5f57d2bd_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image138">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="69" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="69" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="69" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn139" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/693fc613-b594-4eaf-a866-a98c331e4e44.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image139">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn140" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/693fc613-b594-4eaf-a866-a98c331e4e44.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image140">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="70" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="70" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="70" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn141" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/6e42703e-c762-4308-8527-8c0274a1cc16.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image141">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn142" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/6e42703e-c762-4308-8527-8c0274a1cc16.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image142">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="71" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="71" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="71" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn143" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/6f3fcbf1-1cf4-4988-904c-65477f3c38c1_0120.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image143">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn144" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/6f3fcbf1-1cf4-4988-904c-65477f3c38c1_0120.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image144">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="72" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="72" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="72" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn145" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/6f7da763-f23a-4519-a425-c9640b4daf41.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image145">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn146" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/6f7da763-f23a-4519-a425-c9640b4daf41.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image146">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="73" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="73" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="73" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn147" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/701d1994-2553-41b8-afd0-83e4df18c6c0_0060.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image147">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn148" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/701d1994-2553-41b8-afd0-83e4df18c6c0_0060.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image148">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="74" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="74" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="74" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn149" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/70c0b41e-8f58-4b15-b54e-037e77f8f1ab.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image149">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn150" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/70c0b41e-8f58-4b15-b54e-037e77f8f1ab.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image150">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="75" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="75" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="75" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn151" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/71218df1-6d94-4eba-b3e7-3aefdfc84251_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image151">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn152" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/71218df1-6d94-4eba-b3e7-3aefdfc84251_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image152">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="76" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="76" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="76" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn153" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/74072f05-f09a-4274-8608-45f27adec934_0090.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image153">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn154" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/74072f05-f09a-4274-8608-45f27adec934_0090.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image154">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="77" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="77" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="77" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn155" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/748df9a4-65f8-4513-a7ae-2f809586622b.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image155">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn156" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/748df9a4-65f8-4513-a7ae-2f809586622b.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image156">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="78" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="78" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="78" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn157" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/757cef55-7fd6-4d9c-be8b-96283a8752a2_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image157">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn158" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/757cef55-7fd6-4d9c-be8b-96283a8752a2_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image158">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="79" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="79" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="79" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn159" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/77f1601f-68bf-43cc-81ba-7870e608255c.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image159">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn160" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/77f1601f-68bf-43cc-81ba-7870e608255c.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image160">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="80" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="80" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="80" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn161" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/795fb114-bda3-4b85-9c65-bb317f88dcf0_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image161">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn162" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/795fb114-bda3-4b85-9c65-bb317f88dcf0_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image162">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="81" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="81" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="81" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn163" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/83eaea27-ef5b-4159-85ab-b940295fc3b5.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image163">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn164" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/83eaea27-ef5b-4159-85ab-b940295fc3b5.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image164">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="82" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="82" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="82" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn165" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/8401db8f-f852-46c8-b579-ec3ca41ba56f_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image165">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn166" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/8401db8f-f852-46c8-b579-ec3ca41ba56f_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image166">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="83" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="83" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="83" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn167" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/8467dca9-7fd3-4cf6-9dab-9764773e3024_0090.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image167">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn168" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/8467dca9-7fd3-4cf6-9dab-9764773e3024_0090.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image168">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="84" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="84" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="84" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn169" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/8534ccad-13a1-428a-851f-e94138c837f1.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image169">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn170" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/8534ccad-13a1-428a-851f-e94138c837f1.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image170">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="85" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="85" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="85" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn171" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/868bbd73-f6a0-4bb5-8b6d-2abdeabd3e5f_0060.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image171">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn172" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/868bbd73-f6a0-4bb5-8b6d-2abdeabd3e5f_0060.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image172">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="86" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="86" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="86" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn173" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/870d7383-7116-4096-a6a8-f8eebf0a27c2_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image173">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn174" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/870d7383-7116-4096-a6a8-f8eebf0a27c2_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image174">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="87" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="87" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="87" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn175" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/897cb154-a113-45d2-b020-f49a20aa704e_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image175">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn176" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/897cb154-a113-45d2-b020-f49a20aa704e_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image176">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="88" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="88" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="88" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn177" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/8a596786-9435-4978-9123-85c522b65a0e.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image177">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn178" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/8a596786-9435-4978-9123-85c522b65a0e.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image178">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="89" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="89" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="89" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn179" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/8b58be46-f388-4d71-a2fa-49b3b4c20012.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image179">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn180" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/8b58be46-f388-4d71-a2fa-49b3b4c20012.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image180">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="90" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="90" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="90" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn181" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/8cd2d4c6-99e8-40f4-b1fa-d49d077194ff.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image181">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn182" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/8cd2d4c6-99e8-40f4-b1fa-d49d077194ff.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image182">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="91" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="91" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="91" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn183" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/8f04ded6-2703-486b-87c6-411449afea6c.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image183">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn184" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/8f04ded6-2703-486b-87c6-411449afea6c.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image184">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="92" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="92" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="92" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn185" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/8f04df9f-a59a-43e6-bb98-59ed12933818.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image185">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn186" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/8f04df9f-a59a-43e6-bb98-59ed12933818.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image186">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="93" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="93" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="93" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn187" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/8faf9a86-1703-4d87-8bc2-2b3e3c340dcf.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image187">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn188" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/8faf9a86-1703-4d87-8bc2-2b3e3c340dcf.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image188">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="94" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="94" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="94" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn189" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/930f0c06-18f5-4ead-9c76-598315607468.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image189">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn190" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/930f0c06-18f5-4ead-9c76-598315607468.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image190">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="95" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="95" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="95" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn191" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/946870ea-87aa-44f1-8901-6a1d83c3f05d.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image191">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn192" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/946870ea-87aa-44f1-8901-6a1d83c3f05d.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image192">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="96" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="96" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="96" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn193" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/9673eed4-15d9-47fe-992f-e4b24eb5dc3a.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image193">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn194" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/9673eed4-15d9-47fe-992f-e4b24eb5dc3a.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image194">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="97" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="97" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="97" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn195" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/967a9871-f879-44bf-b218-87e9a1665e06.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image195">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn196" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/967a9871-f879-44bf-b218-87e9a1665e06.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image196">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="98" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="98" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="98" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn197" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/97bc6157-9c53-4e30-9b84-53ba818cae5c.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image197">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn198" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/97bc6157-9c53-4e30-9b84-53ba818cae5c.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image198">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="99" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="99" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="99" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn199" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/982140c9-f485-49fd-8f9b-f46256b8f0a0.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image199">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn200" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/982140c9-f485-49fd-8f9b-f46256b8f0a0.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image200">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="100" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="100" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="100" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn201" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/9a9d7178-9a73-4c00-be27-3190f8c08902.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image201">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn202" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/9a9d7178-9a73-4c00-be27-3190f8c08902.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image202">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="101" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="101" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="101" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn203" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/9afc6145-12df-4f5b-8f6e-643df1984b05.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image203">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn204" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/9afc6145-12df-4f5b-8f6e-643df1984b05.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image204">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="102" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="102" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="102" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn205" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/9b1bdfa5-6c7d-4f28-8c94-01f6a45c0908.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image205">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn206" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/9b1bdfa5-6c7d-4f28-8c94-01f6a45c0908.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image206">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="103" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="103" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="103" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn207" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/RtcPalVideoDumpCaptured2018_08_31_14_11_54.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image207">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn208" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/RtcPalVideoDumpCaptured2018_08_31_14_11_54.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image208">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="104" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="104" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="104" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn209" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/RtcPalVideoDumpCaptured2019_04_30_10_24_42.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image209">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn210" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/RtcPalVideoDumpCaptured2019_04_30_10_24_42.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image210">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="105" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="105" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="105" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn211" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/RtcPalVideoDumpCaptured2019_05_14_11_05_13.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image211">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn212" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/RtcPalVideoDumpCaptured2019_05_14_11_05_13.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image212">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="106" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="106" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="106" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn213" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/WIN_20190530_10_32_06_Pro.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image213">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn214" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/WIN_20190530_10_32_06_Pro.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image214">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="107" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="107" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="107" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn215" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/a0b1d5fe-5381-4ada-845d-1383b229b6fd.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image215">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn216" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/a0b1d5fe-5381-4ada-845d-1383b229b6fd.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image216">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="108" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="108" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="108" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn217" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/a5f4c000-a680-44a2-add9-71eef7427321_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image217">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn218" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/a5f4c000-a680-44a2-add9-71eef7427321_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image218">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="109" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="109" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="109" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn219" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/a9f3ca91-1c62-4850-a22c-bfca960b1147.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image219">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn220" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/a9f3ca91-1c62-4850-a22c-bfca960b1147.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image220">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="110" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="110" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="110" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn221" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/aaa56f2e-e14c-4a17-aa92-b9169c01bf7c_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image221">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn222" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/aaa56f2e-e14c-4a17-aa92-b9169c01bf7c_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image222">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="111" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="111" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="111" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn223" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/abbd5766-0b37-4b63-9f45-89e3e290caad.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image223">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn224" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/abbd5766-0b37-4b63-9f45-89e3e290caad.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image224">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="112" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="112" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="112" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn225" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/acfa9cc8-1486-40f8-b5ce-b2f69b8e5606_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image225">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn226" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/acfa9cc8-1486-40f8-b5ce-b2f69b8e5606_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image226">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="113" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="113" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="113" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn227" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/addf2714-516b-40f0-b2e0-eef0d48fe8b3.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image227">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn228" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/addf2714-516b-40f0-b2e0-eef0d48fe8b3.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image228">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="114" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="114" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="114" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn229" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/adf99fe1-a410-4791-a10d-b0a72dd4fd63.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image229">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn230" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/adf99fe1-a410-4791-a10d-b0a72dd4fd63.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image230">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="115" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="115" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="115" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn231" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/af222a22-ae82-4db5-8935-1eba474a9ff4_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image231">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn232" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/af222a22-ae82-4db5-8935-1eba474a9ff4_0030.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image232">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="116" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="116" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="116" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn233" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/b5a998dd-f4bc-4131-a00c-7f6fa34f3bf5_0060.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image233">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn234" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/b5a998dd-f4bc-4131-a00c-7f6fa34f3bf5_0060.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image234">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="117" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="117" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="117" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn235" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/b7e5b775-3ad6-4273-9e2a-2256c70a1ff3.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image235">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn236" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/b7e5b775-3ad6-4273-9e2a-2256c70a1ff3.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image236">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="118" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="118" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="118" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn237" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/b87f2efa-a421-463e-9ef1-8f7900269c96.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image237">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn238" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/b87f2efa-a421-463e-9ef1-8f7900269c96.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image238">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="119" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="119" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="119" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn239" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/ba63fc04-4b12-46ce-bbc7-a0b7f3155607.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image239">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn240" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/ba63fc04-4b12-46ce-bbc7-a0b7f3155607.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image240">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="120" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="120" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="120" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn241" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/beaaf5df-381f-4d27-abd0-80d82176beda.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image241">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn242" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/beaaf5df-381f-4d27-abd0-80d82176beda.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image242">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="121" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="121" type="radio" value="2" id="Chad"/>2</label>
+<label><input name="121" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn243" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/c3ec6ec4-a4f5-4974-b209-5e7e85b39386.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image243">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn244" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/c3ec6ec4-a4f5-4974-b209-5e7e85b39386.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image244">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="122" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="122" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="122" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn245" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/cb254805-2c55-4717-ad3f-ed2d6baddff9.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image245">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn246" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/cb254805-2c55-4717-ad3f-ed2d6baddff9.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image246">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="123" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="123" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="123" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn247" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/cc0f364c-f3ef-41cd-a3a7-d7d442376a8f.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image247">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn248" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/cc0f364c-f3ef-41cd-a3a7-d7d442376a8f.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image248">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="124" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="124" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="124" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn249" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/cc44c59b-7b14-4249-98b0-d0b53ad8f2b9.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image249">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn250" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/cc44c59b-7b14-4249-98b0-d0b53ad8f2b9.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image250">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="125" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="125" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="125" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn251" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/ceba99f8-d189-4211-a0cf-6f7ac0baf586.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image251">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn252" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/ceba99f8-d189-4211-a0cf-6f7ac0baf586.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image252">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="126" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="126" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="126" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn253" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/cf3657e5-705d-4739-af01-1fd1fdb9c8ab.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image253">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn254" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/cf3657e5-705d-4739-af01-1fd1fdb9c8ab.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image254">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="127" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="127" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="127" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn255" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/cf83cfd3-023e-4b18-b28c-37ac5b42329f.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image255">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn256" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/cf83cfd3-023e-4b18-b28c-37ac5b42329f.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image256">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="128" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="128" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="128" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn257" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/cf91dd04-88a4-42b1-84ae-595acc8e5719.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image257">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn258" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/cf91dd04-88a4-42b1-84ae-595acc8e5719.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image258">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="129" type="radio" value="1" id="GooglePhotos"/>1</label>
+<label><input name="129" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="129" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn259" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/daabd38b-765a-480e-bb26-4f65c96a699f.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image259">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn260" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/daabd38b-765a-480e-bb26-4f65c96a699f.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image260">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="130" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="130" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="130" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn261" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/df9861f8-4dff-442d-aa66-607723f3da7e.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image261">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn262" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/df9861f8-4dff-442d-aa66-607723f3da7e.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image262">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="131" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="131" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="131" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn263" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/e2825562-cb75-48be-982a-b41e981e8624.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image263">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn264" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/e2825562-cb75-48be-982a-b41e981e8624.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image264">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="132" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="132" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="132" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn265" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/e2948520-3739-449e-b18a-59643857db53.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image265">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn266" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/e2948520-3739-449e-b18a-59643857db53.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image266">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="133" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="133" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="133" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn267" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/e938b38b-3b91-496b-a67c-5c55dc19ab11.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image267">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn268" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/e938b38b-3b91-496b-a67c-5c55dc19ab11.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image268">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="134" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="134" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="134" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn269" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/eae6a477-1b80-4eb2-8f59-d51c360e0899.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image269">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn270" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/eae6a477-1b80-4eb2-8f59-d51c360e0899.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image270">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="135" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="135" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="135" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn271" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/ef2bfcbd-c847-42c5-a371-deedf2da81a2.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image271">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn272" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/ef2bfcbd-c847-42c5-a371-deedf2da81a2.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image272">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="136" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="136" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="136" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn273" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/f0ba0527-ab69-4511-8621-34dba3ac49be.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image273">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn274" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/f0ba0527-ab69-4511-8621-34dba3ac49be.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image274">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="137" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="137" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="137" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn275" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/f144eb22-5f47-4152-9130-75f5b733e835.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image275">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn276" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/f144eb22-5f47-4152-9130-75f5b733e835.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image276">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="138" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="138" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="138" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn277" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/f2a7a3b6-c769-4e86-a813-839d775185a5.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image277">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn278" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/f2a7a3b6-c769-4e86-a813-839d775185a5.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image278">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="139" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="139" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="139" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn279" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/f6d2437b-05f5-46ca-9bab-018f9032692c.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image279">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn280" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/f6d2437b-05f5-46ca-9bab-018f9032692c.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image280">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="140" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="140" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="140" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn281" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/f785ff9f-638b-436c-a936-66832aef95e9.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image281">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn282" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/f785ff9f-638b-436c-a936-66832aef95e9.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image282">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="141" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="141" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="141" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn283" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/f9a6a300-2bbe-4f02-bd16-19d7edf2b0f6.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image283">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn284" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/f9a6a300-2bbe-4f02-bd16-19d7edf2b0f6.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image284">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="142" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="142" type="radio" value="2" id="Lightroom"/>2</label>
+<label><input name="142" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn285" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/fa3ca390-8e93-47b0-ba69-b43a7ef92d43.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image285">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn286" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/fa3ca390-8e93-47b0-ba69-b43a7ef92d43.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image286">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="143" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="143" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="143" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn287" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/fb6effd9-f773-4bea-9247-11a9f28d2667.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image287">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn288" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/fb6effd9-f773-4bea-9247-11a9f28d2667.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image288">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="144" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="144" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="144" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn289" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/msrtc_image_0.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image289">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn290" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/msrtc_image_0.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image290">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="145" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="145" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="145" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn291" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/msrtc_image_2018_03_19_11_40_46.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image291">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn292" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/msrtc_image_2018_03_19_11_40_46.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image292">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="146" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="146" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="146" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn293" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/msrtc_image_2018_03_20_11_37_06.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image293">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn294" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/msrtc_image_2018_03_20_11_37_06.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image294">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="147" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="147" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="147" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn295" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Lightroom/msrtc_image_2018_03_22_11_42_47.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Lightroom/image295">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn296" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/msrtc_image_2018_03_22_11_42_47.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image296">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="148" type="radio" value="1" id="Lightroom"/>1</label>
+<label><input name="148" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="148" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn297" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="Chad/msrtc_image_2018_03_23_11_36_21.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="Chad/image297">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn298" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/msrtc_image_2018_03_23_11_36_21.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image298">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="149" type="radio" value="1" id="Chad"/>1</label>
+<label><input name="149" type="radio" value="2" id="0330_data_aug"/>2</label>
+<label><input name="149" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<div class="row">
+<div class="column">
+<div id="divIn299" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="0330_data_aug/msrtc_image_2018_05_29_10_27_44.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="0330_data_aug/image299">
+</img>
+</div>
+</div>
+<div class="column">
+<div id="divIn300" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="GooglePhotos/msrtc_image_2018_05_29_10_27_44.png" draggable="true" ondragstart="drag(event)" height="100%" width="100%" id="GooglePhotos/image300">
+</img>
+</div>
+</div>
+</div>
+<form action="" method="get">
+which one is better? 0:left, 1:right<br /><br />
+<label><input name="150" type="radio" value="1" id="0330_data_aug"/>1</label>
+<label><input name="150" type="radio" value="2" id="GooglePhotos"/>2</label>
+<label><input name="150" type="radio" value="2" id="same"checked="checked"/>same</label>
+</form>
+</div>
+</div>
+<div class="mySlides fade">
+<h2>Complete : Thank you for your time! Please submit the results as a text file.</h2>
+<input type="button" width="400" height="80" align="center" onclick="myFunction()" value="Submit Result">
+</div>
+</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+  <span class="dot" onclick="currentSlide(14)"></span>
+  <span class="dot" onclick="currentSlide(15)"></span>
+  <span class="dot" onclick="currentSlide(16)"></span>
+  <span class="dot" onclick="currentSlide(17)"></span>
+  <span class="dot" onclick="currentSlide(18)"></span>
+  <span class="dot" onclick="currentSlide(19)"></span>
+  <span class="dot" onclick="currentSlide(20)"></span>
+  <span class="dot" onclick="currentSlide(21)"></span>
+  <span class="dot" onclick="currentSlide(22)"></span>
+  <span class="dot" onclick="currentSlide(23)"></span>
+  <span class="dot" onclick="currentSlide(24)"></span>
+  <span class="dot" onclick="currentSlide(25)"></span>
+  <span class="dot" onclick="currentSlide(26)"></span>
+  <span class="dot" onclick="currentSlide(27)"></span>
+  <span class="dot" onclick="currentSlide(28)"></span>
+  <span class="dot" onclick="currentSlide(29)"></span>
+  <span class="dot" onclick="currentSlide(30)"></span>
+  <span class="dot" onclick="currentSlide(31)"></span>
+  <span class="dot" onclick="currentSlide(32)"></span>
+  <span class="dot" onclick="currentSlide(33)"></span>
+  <span class="dot" onclick="currentSlide(34)"></span>
+  <span class="dot" onclick="currentSlide(35)"></span>
+  <span class="dot" onclick="currentSlide(36)"></span>
+  <span class="dot" onclick="currentSlide(37)"></span>
+  <span class="dot" onclick="currentSlide(38)"></span>
+  <span class="dot" onclick="currentSlide(39)"></span>
+  <span class="dot" onclick="currentSlide(40)"></span>
+  <span class="dot" onclick="currentSlide(41)"></span>
+  <span class="dot" onclick="currentSlide(42)"></span>
+  <span class="dot" onclick="currentSlide(43)"></span>
+  <span class="dot" onclick="currentSlide(44)"></span>
+  <span class="dot" onclick="currentSlide(45)"></span>
+  <span class="dot" onclick="currentSlide(46)"></span>
+  <span class="dot" onclick="currentSlide(47)"></span>
+  <span class="dot" onclick="currentSlide(48)"></span>
+  <span class="dot" onclick="currentSlide(49)"></span>
+  <span class="dot" onclick="currentSlide(50)"></span>
+  <span class="dot" onclick="currentSlide(51)"></span>
+  <span class="dot" onclick="currentSlide(52)"></span>
+  <span class="dot" onclick="currentSlide(53)"></span>
+  <span class="dot" onclick="currentSlide(54)"></span>
+  <span class="dot" onclick="currentSlide(55)"></span>
+  <span class="dot" onclick="currentSlide(56)"></span>
+  <span class="dot" onclick="currentSlide(57)"></span>
+  <span class="dot" onclick="currentSlide(58)"></span>
+  <span class="dot" onclick="currentSlide(59)"></span>
+  <span class="dot" onclick="currentSlide(60)"></span>
+  <span class="dot" onclick="currentSlide(61)"></span>
+  <span class="dot" onclick="currentSlide(62)"></span>
+  <span class="dot" onclick="currentSlide(63)"></span>
+  <span class="dot" onclick="currentSlide(64)"></span>
+  <span class="dot" onclick="currentSlide(65)"></span>
+  <span class="dot" onclick="currentSlide(66)"></span>
+  <span class="dot" onclick="currentSlide(67)"></span>
+  <span class="dot" onclick="currentSlide(68)"></span>
+  <span class="dot" onclick="currentSlide(69)"></span>
+  <span class="dot" onclick="currentSlide(70)"></span>
+  <span class="dot" onclick="currentSlide(71)"></span>
+  <span class="dot" onclick="currentSlide(72)"></span>
+  <span class="dot" onclick="currentSlide(73)"></span>
+  <span class="dot" onclick="currentSlide(74)"></span>
+  <span class="dot" onclick="currentSlide(75)"></span>
+  <span class="dot" onclick="currentSlide(76)"></span>
+  <span class="dot" onclick="currentSlide(77)"></span>
+  <span class="dot" onclick="currentSlide(78)"></span>
+  <span class="dot" onclick="currentSlide(79)"></span>
+  <span class="dot" onclick="currentSlide(80)"></span>
+  <span class="dot" onclick="currentSlide(81)"></span>
+  <span class="dot" onclick="currentSlide(82)"></span>
+  <span class="dot" onclick="currentSlide(83)"></span>
+  <span class="dot" onclick="currentSlide(84)"></span>
+  <span class="dot" onclick="currentSlide(85)"></span>
+  <span class="dot" onclick="currentSlide(86)"></span>
+  <span class="dot" onclick="currentSlide(87)"></span>
+  <span class="dot" onclick="currentSlide(88)"></span>
+  <span class="dot" onclick="currentSlide(89)"></span>
+  <span class="dot" onclick="currentSlide(90)"></span>
+  <span class="dot" onclick="currentSlide(91)"></span>
+  <span class="dot" onclick="currentSlide(92)"></span>
+  <span class="dot" onclick="currentSlide(93)"></span>
+  <span class="dot" onclick="currentSlide(94)"></span>
+  <span class="dot" onclick="currentSlide(95)"></span>
+  <span class="dot" onclick="currentSlide(96)"></span>
+  <span class="dot" onclick="currentSlide(97)"></span>
+  <span class="dot" onclick="currentSlide(98)"></span>
+  <span class="dot" onclick="currentSlide(99)"></span>
+  <span class="dot" onclick="currentSlide(100)"></span>
+  <span class="dot" onclick="currentSlide(101)"></span>
+  <span class="dot" onclick="currentSlide(102)"></span>
+  <span class="dot" onclick="currentSlide(103)"></span>
+  <span class="dot" onclick="currentSlide(104)"></span>
+  <span class="dot" onclick="currentSlide(105)"></span>
+  <span class="dot" onclick="currentSlide(106)"></span>
+  <span class="dot" onclick="currentSlide(107)"></span>
+  <span class="dot" onclick="currentSlide(108)"></span>
+  <span class="dot" onclick="currentSlide(109)"></span>
+  <span class="dot" onclick="currentSlide(110)"></span>
+  <span class="dot" onclick="currentSlide(111)"></span>
+  <span class="dot" onclick="currentSlide(112)"></span>
+  <span class="dot" onclick="currentSlide(113)"></span>
+  <span class="dot" onclick="currentSlide(114)"></span>
+  <span class="dot" onclick="currentSlide(115)"></span>
+  <span class="dot" onclick="currentSlide(116)"></span>
+  <span class="dot" onclick="currentSlide(117)"></span>
+  <span class="dot" onclick="currentSlide(118)"></span>
+  <span class="dot" onclick="currentSlide(119)"></span>
+  <span class="dot" onclick="currentSlide(120)"></span>
+  <span class="dot" onclick="currentSlide(121)"></span>
+  <span class="dot" onclick="currentSlide(122)"></span>
+  <span class="dot" onclick="currentSlide(123)"></span>
+  <span class="dot" onclick="currentSlide(124)"></span>
+  <span class="dot" onclick="currentSlide(125)"></span>
+  <span class="dot" onclick="currentSlide(126)"></span>
+  <span class="dot" onclick="currentSlide(127)"></span>
+  <span class="dot" onclick="currentSlide(128)"></span>
+  <span class="dot" onclick="currentSlide(129)"></span>
+  <span class="dot" onclick="currentSlide(130)"></span>
+  <span class="dot" onclick="currentSlide(131)"></span>
+  <span class="dot" onclick="currentSlide(132)"></span>
+  <span class="dot" onclick="currentSlide(133)"></span>
+  <span class="dot" onclick="currentSlide(134)"></span>
+  <span class="dot" onclick="currentSlide(135)"></span>
+  <span class="dot" onclick="currentSlide(136)"></span>
+  <span class="dot" onclick="currentSlide(137)"></span>
+  <span class="dot" onclick="currentSlide(138)"></span>
+  <span class="dot" onclick="currentSlide(139)"></span>
+  <span class="dot" onclick="currentSlide(140)"></span>
+  <span class="dot" onclick="currentSlide(141)"></span>
+  <span class="dot" onclick="currentSlide(142)"></span>
+  <span class="dot" onclick="currentSlide(143)"></span>
+  <span class="dot" onclick="currentSlide(144)"></span>
+  <span class="dot" onclick="currentSlide(145)"></span>
+  <span class="dot" onclick="currentSlide(146)"></span>
+  <span class="dot" onclick="currentSlide(147)"></span>
+  <span class="dot" onclick="currentSlide(148)"></span>
+  <span class="dot" onclick="currentSlide(149)"></span>
+  <span class="dot" onclick="currentSlide(150)"></span>
+  <span class="dot" onclick="currentSlide(151)"></span>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  if (ev.target.id != "div_in")
+  {
+    var divNode = document.getElementById(ev.target.id);
+    var inputNodes = divNode.getElementsByTagName('input');
+    inputNodes[0].value = data
+  }
+}
+function myFunction() {
+  var id;
+  var result = "";
+  for (id = 1; id <= 150.0; id++) {
+    divName = id
+    var divNode = document.getElementsByName(divName);
+    for (idx_check = 0; idx_check < 3; idx_check++){
+      var inputNodes = divNode[idx_check].checked;
+      if (inputNodes == true){
+        var check_value = idx_check;
+      }
+    }
+    var file_group = divNode[check_value].id;
+    var name1 = divNode[0].id;
+    var name2 = divNode[1].id;
+    result = result + divName + " " + check_value + " " + file_group + " === " + name1 + " " + name2 + "\n";
+  }
+  var file = new File([result], "name.txt", {type: "text/plain;charset=utf-8"});
+  saveAs(file);
+}
+</script>
+</body>
+<html>
